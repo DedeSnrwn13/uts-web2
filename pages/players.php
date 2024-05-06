@@ -1,3 +1,57 @@
+<?php
+
+class Player
+{
+    private $id;
+    private $name;
+    private $age;
+    private $club;
+    private $position;
+    private $image;
+
+    public function __construct($id, $name, $age, $club, $position, $image)
+    {
+        $this->id = $id;
+        $this->name = $name;
+        $this->age = $age;
+        $this->club = $club;
+        $this->position = $position;
+        $this->image = $image;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    public function getClub()
+    {
+        return $this->club;
+    }
+
+    public function getPosition()
+    {
+        return $this->position;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
